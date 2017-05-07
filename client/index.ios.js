@@ -9,7 +9,7 @@ export default class App extends Component {
 
     return(
       <View>
-        <Header />
+        <Header headerText='Albums!'/>
       </View>
     )
   }
