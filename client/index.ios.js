@@ -5,13 +5,11 @@ import Header from './src/components/Header';
 
 export default class App extends Component {
   render() {
+    // const { text } = styles;
 
     return(
       <View>
         <Header />
-        <Text>
-          Hello
-        </Text>
       </View>
     )
   }
