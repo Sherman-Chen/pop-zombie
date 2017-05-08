@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Text, View } from 'react-native';
+import { View } from 'react-native';
 import axios from 'axios';
 
 import AlbumDetail from './AlbumDetail';
@@ -35,12 +35,15 @@ export default class AlbumList extends Component {
   render() {
     let mappedAlbums = this.state.albums.map(album => {
       return (
-        <AlbumDetail title={album.title}/>
+        <AlbumDetail
+          key={album.title}
+          title={album.title}
+        />
       );
     });
 
     if (this.state.fetched) {
-      console.log(this.state.albums);
+      // console.log(this.state.albums);
       return (
         <View>
           {mappedAlbums[0]}
