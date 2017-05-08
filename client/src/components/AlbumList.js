@@ -20,7 +20,7 @@ export default class AlbumList extends Component {
 
   async fetchData() {
     try {
-      let response = await axios.get('https://rallycoding.herokuapp.com/api/music_albums');
+      let response = await axios.get('http://localhost:8000/api');
       let albums = response.data;
 
       this.setState({
