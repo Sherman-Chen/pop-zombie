@@ -1,12 +1,12 @@
 // @flow
 import React from 'react';
-import { Text, View, Image, StyleSheet } from 'react-native';
+import { Text, View, Image, StyleSheet, Linking } from 'react-native';
 import Card from './Card';
 import CardSection from './CardSection';
 import Button from './Button';
 
 const AlbumDetail = (props) => {
-  let { title, artist, thumbnail, image } = props;
+  let { title, artist, thumbnail, image, url } = props;
   let { headerContentStyle, headerTextStyle, thumbnailStyle, thumbnailContainerStyle, imageStyle } = styles;
 
   return (
@@ -24,7 +24,7 @@ const AlbumDetail = (props) => {
         <Image style={imageStyle} source={{uri: image}}/>
       </CardSection>
       <CardSection>
-        <Button />
+        <Button onPress={() => Linking.openURL(url)} title={title}/>
       </CardSection>
     </Card>
   );

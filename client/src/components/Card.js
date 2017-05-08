@@ -13,7 +13,8 @@ const Card = (props) => {
 const styles = StyleSheet.create({
   containerStyle: {
     borderWidth: 1,
-    borderRadius: 2,
+    borderRadius: 5,
+    overflow: 'hidden',
     borderColor: '#dddddd',
     borderBottomWidth: 0,
     shadowColor: '#000000',

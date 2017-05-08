@@ -41,6 +41,7 @@ export default class AlbumList extends Component {
           artist={album.artist}
           thumbnail={album.thumbnail_image}
           image={album.image}
+          url={album.url}
         />
       );
     });
