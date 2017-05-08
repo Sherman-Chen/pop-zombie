@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { View } from 'react-native';
+import { ScrollView } from 'react-native';
 import axios from 'axios';
 
 import AlbumDetail from './AlbumDetail';
@@ -48,9 +48,9 @@ export default class AlbumList extends Component {
     if (this.state.fetched) {
       // console.log(this.state.albums);
       return (
-        <View>
+        <ScrollView>
           {mappedAlbums}
-        </View>
+        </ScrollView>
       )
     } else {
       return null;
