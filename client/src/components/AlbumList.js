@@ -6,7 +6,8 @@ export default class AlbumList extends Component {
   constructor() {
     super();
     this.state = {
-      albums: []
+      albums: [],
+      fetched: false
     };
     this.fetchData = this.fetchData.bind(this);
   }
@@ -21,18 +22,32 @@ export default class AlbumList extends Component {
       let albums = response.data;
 
       this.setState({
-        albums
-      }, () => {console.log(this.state.albums)});
+        albums,
+        fetched: true
+      });
     } catch (err) {
       console.error(err);
     }
   }
 
   render() {
-    return (
-      <View>
-        <Text>MAMA MIA!</Text>
-      </View>
-    )
+    let mappedAlbums = this.state.albums.map((album, i) => {
+      return (
+        <View key={i}>
+          <Text>{album.title}</Text>
+        </View>
+      );
+    });
+
+    if (this.state.fetched) {
+      console.log(this.state.albums);
+      return (
+        <View>
+          {mappedAlbums[0]}
+        </View>
+      )
+    } else {
+      return null;
+    }
   }
 }
