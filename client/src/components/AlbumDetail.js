@@ -1,52 +1,65 @@
 // @flow
-import React from 'react';
-import { Text, View, Image, StyleSheet, Linking } from 'react-native';
+import React, { Component } from 'react';
+import { Text, View, Image, StyleSheet } from 'react-native';
 import FlipCard from 'react-native-flip-card';
 import Card from './Card';
 import CardSection from './CardSection';
 import Button from './Button';
 import TrackListingDetail from './TrackListingDetail';
 
-const AlbumDetail = (props) => {
-  let { title, artist, thumbnail, image, url } = props;
-  let { headerContentStyle, headerTextStyle, thumbnailStyle, thumbnailContainerStyle, imageStyle } = styles;
+export default class AlbumDetail extends Component {
+  constructor(props) {
+    super(props);
+    this.onPress = this.onPress.bind(this);
+  }
 
-  return (
-    <Card>
-      <CardSection>
-        <View style={thumbnailContainerStyle}>
-          <Image style={thumbnailStyle} source={{uri: thumbnail}}/>
-        </View>
-        <View style={headerContentStyle}>
-          <Text style={headerTextStyle}>{title}</Text>
-          <Text>{artist}</Text>
-        </View>
-      </CardSection>
-      <FlipCard
-        style={{borderWidth: 0}}
-        friction={10}
-        perspective={0}
-        alignHeight={true}
-        flipHorizontal={true}
-        flipVertical={false}
-      >
-        <View>
-          <CardSection>
-            <Image style={imageStyle} source={{uri: image}}/>
-          </CardSection>
-        </View>
-        <View>
-          <CardSection>
-            <TrackListingDetail />
-          </CardSection>
-        </View>
-      </FlipCard>
+  onPress(url) {
+    this.props.onPurchasePress(this.props.url);
+  }
 
-      <CardSection>
-        <Button onPress={() => Linking.openURL(url)} title={title}/>
-      </CardSection>
-    </Card>
-  );
+  render() {
+    let { title, artist, thumbnail, image, url, onPurchasePress } = this.props;
+    let { headerContentStyle, headerTextStyle, thumbnailStyle, thumbnailContainerStyle, imageStyle } = styles;
+
+    return (
+      <Card>
+        <CardSection>
+          <View style={thumbnailContainerStyle}>
+            <Image style={thumbnailStyle} source={{uri: thumbnail}}/>
+          </View>
+          <View style={headerContentStyle}>
+            <Text style={headerTextStyle}>{title}</Text>
+            <Text>{artist}</Text>
+          </View>
+        </CardSection>
+        <FlipCard
+          style={{borderWidth: 0}}
+          friction={10}
+          perspective={0}
+          alignHeight={true}
+          flipHorizontal={true}
+          flipVertical={false}
+          >
+          <View>
+            <CardSection>
+              <Image style={imageStyle} source={{uri: image}}/>
+            </CardSection>
+          </View>
+          <View>
+            <CardSection>
+              <TrackListingDetail />
+            </CardSection>
+          </View>
+        </FlipCard>
+
+        <CardSection>
+          <Button
+            onPress={this.onPress}
+            title={title}/>
+        </CardSection>
+      </Card>
+    );
+  }
 };
 
 const styles = StyleSheet.create({
@@ -76,5 +89,3 @@ const styles = StyleSheet.create({
     width: null
   }
 });
-
-export default AlbumDetail;

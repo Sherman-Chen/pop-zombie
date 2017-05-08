@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { ScrollView } from 'react-native';
+import { ScrollView, Linking } from 'react-native';
 import axios from 'axios';
 
 import AlbumDetail from './AlbumDetail';
@@ -12,6 +12,7 @@ export default class AlbumList extends Component {
       fetched: false
     };
     this.fetchData = this.fetchData.bind(this);
+    this.onPurchasePress = this.onPurchasePress.bind(this);
   }
 
   componentDidMount() {
@@ -32,6 +33,18 @@ export default class AlbumList extends Component {
     }
   }
 
+  onPurchasePress(url) {
+    Linking.canOpenURL(url).then(supported => {
+      if (!supported) {
+        console.log(`Can't handle url: ${url}`);
+      } else {
+        return Linking.openURL(url);
+      }
+    }).catch(err => {
+      console.error('an error occured: ', err);
+    });
+  }
+
   render() {
     let mappedAlbums = this.state.albums.map(album => {
       return (
@@ -42,6 +55,7 @@ export default class AlbumList extends Component {
           thumbnail={album.thumbnail_image}
           image={album.image}
           url={album.url}
+          onPurchasePress = {this.onPurchasePress}
         />
       );
     });
