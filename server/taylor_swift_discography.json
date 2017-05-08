@@ -28,7 +28,19 @@
   "thumbnail_image": "https://i.imgur.com/K3KJ3w4h.jpg",
   "tracks":
     [
-      {"title": "Fearless", "duration": "3:54"}
+      {"title": "Fearless", "duration": "4:01"},
+      {"title": "Fifteen", "duration": "4:54"},
+      {"title": "Love Story", "duration": "3:55"},
+      {"title": "Hey Stephen", "duration": "4:14"},
+      {"title": "White House", "duration": "3:54"},
+      {"title": "You Belong with Me", "duration": "3:51"},
+      {"title": "Breathe", "duration": "4:23"},
+      {"title": "Tell Me Why", "duration": "3:20"},
+      {"title": "You're Not Sorry", "duration": "4:21"},
+      {"title": "The Way I Loved You", "duration": "4:04"},
+      {"title": "Forever and Always", "duration": "3:45"},
+      {"title": "The Best Day", "duration": "4:05"},
+      {"title": "Change", "duration": "4:40"}
     ]
   },
  {
@@ -39,7 +51,20 @@
   "thumbnail_image": "https://i.imgur.com/K3KJ3w4h.jpg",
   "tracks":
     [
-      {"title": "Tim McGraw", "duration": "3:54"}
+      {"title": "Mine", "duration": "3:50"},
+      {"title": "Sparks Fly", "duration": "4:20"},
+      {"title": "Back to December", "duration": "4:53"},
+      {"title": "Speak Now", "duration": "4:00"},
+      {"title": "Dear John", "duration": "6:43"},
+      {"title": "Mean", "duration": "3:57"},
+      {"title": "The Story of Us", "duration": "4:25"},
+      {"title": "Never Grow Up", "duration": "4:50"},
+      {"title": "Enchanted", "duration": "5:53"},
+      {"title": "Better than Revenge", "duration": "3:37"},
+      {"title": "Innocent", "duration": "5:02"},
+      {"title": "Haunted", "duration": "4:02"},
+      {"title": "Last Kiss", "duration": "6:07"},
+      {"title": "Long Live", "duration": "5:17"}
     ]
   },
  {
@@ -50,7 +75,22 @@
   "thumbnail_image": "https://i.imgur.com/K3KJ3w4h.jpg",
   "tracks":
     [
-      {"title": "Tim McGraw", "duration": "3:54"}
+      {"title": "State of Grace", "duration": "4:55"},
+      {"title": "Red", "duration": "3:43"},
+      {"title": "Treacherous", "duration": "4:02"},
+      {"title": "I Knew You Were Trouble", "duration": "3:39"},
+      {"title": "All Too Well", "duration": "5:29"},
+      {"title": "22", "duration": "3:52"},
+      {"title": "I Almost Do", "duration": "4:04"},
+      {"title": "We Are Never Ever Getting Back Together", "duration": "3:13"},
+      {"title": "Stay Stay Stay", "duration": "3:25"},
+      {"title": "The Last Time", "duration": "4:59"},
+      {"title": "Holy Ground", "duration": "3:22"},
+      {"title": "Sad Beautiful Tragic", "duration": "4:44"},
+      {"title": "The Lucky One", "duration": "4:00"},
+      {"title": "Everything Has Changed", "duration": "4:05"},
+      {"title": "Starlight", "duration": "3:40"},
+      {"title": "Begin Again", "duration": "3:57"}
     ]
   },
  {
@@ -61,7 +101,19 @@
   "thumbnail_image": "https://i.imgur.com/K3KJ3w4h.jpg",
   "tracks":
     [
-      {"title": "Tim McGraw", "duration": "3:54"}
+      {"title": "Welcome to New York", "duration": "3:32"},
+      {"title": "Blank Space", "duration": "3:51"},
+      {"title": "Style", "duration": "3:51"},
+      {"title": "Out of the Woods", "duration": "3:55"},
+      {"title": "All You Had to Do Was Stay", "duration": "3:13"},
+      {"title": "Shake It Off", "duration": "3:39"},
+      {"title": "I Wish You Would", "duration": "3:27"},
+      {"title": "Bad Blood", "duration": "3:31"},
+      {"title": "Wildest Dreams", "duration": "3:40"},
+      {"title": "How You Get the Girl", "duration": "4:07"},
+      {"title": "This Love", "duration": "4:10"},
+      {"title": "I Know Places", "duration": "3:15"},
+      {"title": "Clean", "duration": "4:30"}
     ]
   }
 ]
