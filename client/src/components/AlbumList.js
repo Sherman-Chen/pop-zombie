@@ -10,15 +10,13 @@ export default class AlbumList extends Component {
       albums: [],
       fetched: false
     };
-    this.fetchData = this.fetchData.bind(this);
-    this.onPurchasePress = this.onPurchasePress.bind(this);
   }
 
   componentDidMount() {
     this.fetchData();
   }
 
-  async fetchData() {
+ fetchData = async () => {
     try {
       let response = await axios.get('http://localhost:8000/api');
       let albums = response.data;
@@ -32,7 +30,7 @@ export default class AlbumList extends Component {
     }
   }
 
-  onPurchasePress(url) {
+  onPurchasePress = (url) => {
     Linking.canOpenURL(url).then(supported => {
       if (!supported) {
         console.log(`Can't handle url: ${url}`);
