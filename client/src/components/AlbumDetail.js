@@ -5,6 +5,7 @@ import FlipCard from 'react-native-flip-card';
 import Card from './Card';
 import CardSection from './CardSection';
 import Button from './Button';
+import TrackListingDetail from './TrackListingDetail';
 
 const AlbumDetail = (props) => {
   let { title, artist, thumbnail, image, url } = props;
@@ -36,9 +37,7 @@ const AlbumDetail = (props) => {
         </View>
         <View>
           <CardSection>
-            <Text style={{height: 333}}>
-
-            </Text>
+            <TrackListingDetail />
           </CardSection>
         </View>
       </FlipCard>
