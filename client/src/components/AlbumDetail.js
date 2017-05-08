@@ -13,7 +13,7 @@ export default class AlbumDetail extends Component {
     this.onPress = this.onPress.bind(this);
   }
 
-  onPress(url) {
+  onPress() {
     this.props.onPurchasePress(this.props.url);
   }
 

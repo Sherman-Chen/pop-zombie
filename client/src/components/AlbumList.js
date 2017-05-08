@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { ScrollView, Linking } from 'react-native';
 import axios from 'axios';
-
 import AlbumDetail from './AlbumDetail';
 
 export default class AlbumList extends Component {
