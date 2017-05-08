@@ -1,6 +1,7 @@
 // @flow
 import React from 'react';
 import { Text, View, Image, StyleSheet, Linking } from 'react-native';
+import FlipCard from 'react-native-flip-card';
 import Card from './Card';
 import CardSection from './CardSection';
 import Button from './Button';
@@ -20,9 +21,28 @@ const AlbumDetail = (props) => {
           <Text>{artist}</Text>
         </View>
       </CardSection>
-      <CardSection>
-        <Image style={imageStyle} source={{uri: image}}/>
-      </CardSection>
+      <FlipCard
+        style={{borderWidth: 0}}
+        friction={10}
+        perspective={0}
+        alignHeight={true}
+        flipHorizontal={true}
+        flipVertical={false}
+      >
+        <View>
+          <CardSection>
+            <Image style={imageStyle} source={{uri: image}}/>
+          </CardSection>
+        </View>
+        <View>
+          <CardSection>
+            <Text style={{height: 333}}>
+
+            </Text>
+          </CardSection>
+        </View>
+      </FlipCard>
+
       <CardSection>
         <Button onPress={() => Linking.openURL(url)} title={title}/>
       </CardSection>
