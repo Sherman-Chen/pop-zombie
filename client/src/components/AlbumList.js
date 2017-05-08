@@ -38,6 +38,8 @@ export default class AlbumList extends Component {
         <AlbumDetail
           key={album.title}
           title={album.title}
+          artist={album.artist}
+          thumbnail={album.thumbnail_image}
         />
       );
     });
@@ -46,7 +48,7 @@ export default class AlbumList extends Component {
       // console.log(this.state.albums);
       return (
         <View>
-          {mappedAlbums[0]}
+          {mappedAlbums}
         </View>
       )
     } else {
