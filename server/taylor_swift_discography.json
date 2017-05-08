@@ -7,7 +7,17 @@
   "thumbnail_image": "https://i.imgur.com/K3KJ3w4h.jpg",
   "tracks":
     [
-      {"title": "Tim McGraw", "duration": "3:54"}
+      {"title": "Tim McGraw", "duration": "3:54"},
+      {"title": "Picture to Burn", "duration": "2:55"},
+      {"title": "Teardrops on My Guitar", "duration": "3:35"},
+      {"title": "A Place in This World", "duration": "3:22"},
+      {"title": "Cold as You", "duration": "4:01"},
+      {"title": "The Outside", "duration": "3:29"},
+      {"title": "Tied Together with a Smile", "duration": "4:11"},
+      {"title": "Stay Beautiful", "duration": "3:48"},
+      {"title": "Should've Said No", "duration": "4:04"},
+      {"title": "Mary's Song (Oh My My My)", "duration": "3:35"},
+      {"title": "Our Song", "duration": "3:24"}
     ]
   },
  {

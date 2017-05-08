@@ -47,7 +47,7 @@ export default class AlbumDetail extends Component {
           </View>
           <View>
             <CardSection>
-              <TrackListingDetail tracks={tracks} title={title}/>
+              <TrackListingDetail tracks={tracks}/>
             </CardSection>
           </View>
         </FlipCard>
