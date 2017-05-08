@@ -10,10 +10,9 @@ import TrackListingDetail from './TrackListingDetail';
 export default class AlbumDetail extends Component {
   constructor(props) {
     super(props);
-    this.onPress = this.onPress.bind(this);
   }
 
-  onPress() {
+  onPress = () => {
     this.props.onPurchasePress(this.props.url);
   }
 
