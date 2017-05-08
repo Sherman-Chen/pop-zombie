@@ -14,7 +14,9 @@ const Header = (props) => {
 
 const styles = StyleSheet.create({
   textStyle: {
-    fontSize: 20
+    fontSize: 20,
+    color: 'dodgerblue',
+    fontWeight: 'bold'
   },
   viewStyle: {
     backgroundColor: '#F8F8F8',

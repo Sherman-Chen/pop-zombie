@@ -9,7 +9,7 @@ export default class App extends Component {
     // const { text } = styles;
 
     return(
-      <View style={{flex: 1, backgroundColor: 'dodgerblue'}}>
+      <View style={{flex: 1, backgroundColor: 'dodgerblue', paddingBottom: 5}}>
         <Header headerText='TayTay Parade'/>
         <AlbumList />
       </View>

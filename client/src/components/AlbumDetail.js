@@ -36,7 +36,9 @@ const styles = StyleSheet.create({
     justifyContent: 'space-around'
   },
   headerTextStyle: {
-    fontSize: 18
+    fontSize: 16,
+    fontStyle: 'italic',
+    fontWeight: 'bold'
   },
   thumbnailStyle: {
     height: 50,
@@ -50,7 +52,7 @@ const styles = StyleSheet.create({
     marginRight: 10
   },
   imageStyle: {
-    height: 300,
+    height: 333,
     flex: 1,
     width: null
   }
