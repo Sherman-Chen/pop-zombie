@@ -18,7 +18,7 @@ export default class AlbumDetail extends Component {
   }
 
   render() {
-    let { title, artist, thumbnail, image, url, onPurchasePress } = this.props;
+    let { title, artist, thumbnail, image, url, tracks, onPurchasePress} = this.props;
     let { headerContentStyle, headerTextStyle, thumbnailStyle, thumbnailContainerStyle, imageStyle } = styles;
 
     return (
@@ -47,11 +47,10 @@ export default class AlbumDetail extends Component {
           </View>
           <View>
             <CardSection>
-              <TrackListingDetail />
+              <TrackListingDetail tracks={tracks} title={title}/>
             </CardSection>
           </View>
         </FlipCard>
-
         <CardSection>
           <Button
             onPress={this.onPress}

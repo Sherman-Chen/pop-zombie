@@ -54,6 +54,7 @@ export default class AlbumList extends Component {
           thumbnail={album.thumbnail_image}
           image={album.image}
           url={album.url}
+          tracks={album.tracks}
           onPurchasePress = {this.onPurchasePress}
         />
       );
